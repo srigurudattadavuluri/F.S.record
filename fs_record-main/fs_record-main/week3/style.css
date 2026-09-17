@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+.container {
+    width: 400px;
+    margin: 50px auto;
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+input {
+    padding: 8px;
+    width: 200px;
+}
+
+button {
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+li {
+    margin: 10px auto;
+     
+}
+
+.delete {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+}

@@ -1,0 +1,430 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    height:100%;
+}
+body{
+background:#f6f6f6;
+    color:black;
+
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+.top-header{
+    background:#0B3C6F;
+    height:150px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+}
+
+.logo{
+    position:absolute;
+    left:15px;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+}
+
+.titlehead h2{
+    color:white;
+    
+    font-size:28px;
+    font-weight:bold;
+    margin-bottom:5px;
+    text-align: center;
+}
+.titlehead h3{
+    color:#d67d47;
+    font-size:22px;
+    font-weight:bold;
+    text-align: center;
+    
+}
+.navigator{
+    background:#0b5d92;
+    height:42px;
+    line-height:40px;   
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+.navigator ul{
+    list-style:none;
+    display:flex;
+    
+    align-items:center;
+    height:100%;
+    gap:45px;
+     margin:0 30px;
+    
+    
+}
+.navigator ul li a{
+     color:white;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:bold;
+
+    
+}
+
+.hero{
+    width:100%;
+    height:600px;
+    overflow:hidden;
+}
+
+.hero video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+footer{
+    background:#083b6d;
+    color:white;
+    padding:10px;
+    border-top:3px solid gold;
+    font-size:20px;
+    font-weight:bold;
+    
+}
+
+
+.stats{
+    width:100%;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    padding:60px 20px;
+    background:#f6f6f6;
+}
+
+.card{
+    width:180px;
+    height:90px;
+    background:#eef5f9;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 3px 10px rgba(0,0,0,0.25);
+    padding-top:18px;
+    
+}
+
+.card h2{
+    font-size:30px;
+    color: #333;;
+}
+.card p{
+    font-size: 16px;
+    color: #150707;
+}
+
+
+footer{
+    background:#0B3C6F;
+    color:white;
+    text-align:center;
+    padding:15px;
+    font-size:18px;
+    border-top:3px solid gold;
+
+     margin-top:20px;
+}
+    
+
+
+.content{
+    width:90%;
+    margin: 25px auto;
+    background:white;
+    padding:30px;
+    border-radius: 10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
+}
+
+.content p{
+    line-height:1.8;
+    text-align:justify;
+    font-size:15px
+}
+
+.content h2{
+    text-align:center;
+    color:#0B3C6F;
+    margin-bottom:20px;
+}
+
+.content ul{
+    margin-left:30px;
+}
+
+.content li{
+    margin-bottom:10px;
+    line-height:1.6;
+}
+
+.content:hover{
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.content h3{
+    text-align:left;
+    
+    margin-bottom:20px;
+    line-height:2.5;
+}
+
+main{
+    flex:1;
+}
+
+.contact-det{
+    line-height:1.8;
+}
+
+.register-form{
+     width:70%;
+    margin: 30px auto;
+    background:white;
+    padding:30px;
+    border-radius: 30px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
+}
+.register-form:hover{
+   box-shadow:0 8px 20px rgba(0, 0, 0, 0.258);
+    transition:0.6s;
+    
+}
+.register-form fieldset{
+    padding:20px;
+    border-radius:30px;
+}
+
+.register-form fieldset table{
+     margin:0 auto;
+    border-spacing:15px;
+    
+}
+
+.register-form fieldset table tr td{
+    column-gap:50px;
+    text-align:center;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.register-form td:first-child{
+    width:220px;
+    text-align:right;
+    padding-right:20px;
+    font-weight:bold;
+}
+
+.register-form td:last-child{
+    text-align:left;
+    border-radius: 30px;
+    
+}
+
+.register-form input
+{
+    border-radius:3px;
+    border:1px solid #ccc;
+}
+
+
+
+.register-form td:last-child label{
+    display:block;
+    margin:8px 0;
+}
+
+.register-form legend{
+    font-weight: bold;
+    text-align: center;
+}
+
+.buttons{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin: 0 auto;
+ gap:15px
+}
+
+.buttons input{
+    background:#0B3C6F;
+    color:white;
+    border:none;
+    border-radius:5px;
+    padding:10px 20px;
+    cursor:pointer;
+    width:auto;  
+}
+.buttons input:hover{
+    background:#145A86;
+}
+
+.success1{
+      width:50%;
+    margin: 30px auto;
+    background:white;
+    padding:30px;
+    border-radius: 30px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
+}
+
+.success-card{
+    text-align: center;
+    line-height: 1.8;
+}
+.success-card h2{
+    color: #269b06;
+    font-weight: bold;
+     font-size:32px;
+     margin-bottom: 10px;
+     margin-bottom:15px;
+}
+.success-card h3{
+    color: #0b5d92;
+}
+.success-card p{
+    color:#555;
+    margin-bottom:25px;
+}
+.notice{
+     background:#FFF5CC;
+    border-left:6px solid orange;
+    padding:20px;
+    border-radius:8px;
+    text-align:left;
+}
+.notice h4{
+    color:#333;
+    margin-bottom:10px;
+    text-align:left;
+}
+
+.notice ul{
+    margin-left:20px;
+    line-height:1.8;
+}
+
+.notice li{
+    margin-bottom:5px;
+}
+
+.success1:hover{
+    box-shadow:0 8px 20px rgba(0,0,0,0.25);
+    transition:0.3s ease;
+}
+.login{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px 20px;
+    
+}
+.login-card{
+    width:400px;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.2);
+    line-height: 1.8;
+}
+
+.login-card h2{
+    text-align:center;
+    color:#0B3C6F;
+    margin-bottom:25px;
+}
+
+.inp input{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.remember{
+    font-size:15px;
+}
+
+.login-card p a{
+    text-decoration: none;
+}
+
+.login-card:hover{
+    box-shadow:0 8px 20px rgba(0,0,0,0.25);
+    transition:0.3s;
+}
+
+.highlights{
+
+    
+    width:90%;
+    margin:30px auto;
+    text-align:center;
+}
+
+.highlights img{
+    width:60%;
+    margin:15px 0;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.2);
+}
+
+.companies{
+    width:90%;
+    margin:30px auto;
+    background:#fff;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
+}
+
+.companies h2{
+    text-align:center;
+    color:#0B3C6F;
+    margin-bottom:20px;
+}
+
+.companies table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.companies th{
+    background:#0B5D92;
+    color:white;
+    padding:12px;
+}
+
+.companies td{
+    padding:12px;
+}
+
+.companies tr:nth-child(even){
+    background:#f5f5f5;
+}
+
+.companies tr:hover{
+    background:#eef6ff;
+}
