@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Student Course Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Student Course Management System</h1>
+
+        <p>
+            Manage students and their courses
+            using Node.js and Express.js
+        </p>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- ADD STUDENT -->
+
+        <section class="card">
+
+            <h2>Add Student</h2>
+
+            <form id="studentForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Student Name"
+                    required
+                >
+
+                <input
+                    type="number"
+                    id="age"
+                    placeholder="Age"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="course"
+                    placeholder="Course"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Email"
+                    required
+                >
+
+                <button type="submit">
+                    Add Student
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- VIEW STUDENTS -->
+
+        <section class="card">
+
+            <h2>Students</h2>
+
+            <button onclick="getStudents()">
+                View All Students
+            </button>
+
+            <div id="studentList"></div>
+
+        </section>
+
+
+        <!-- SEARCH -->
+
+        <section class="card">
+
+            <h2>Search Students</h2>
+
+            <input
+                type="text"
+                id="searchCourse"
+                placeholder="Enter course name"
+            >
+
+            <button onclick="searchStudents()">
+                Search
+            </button>
+
+            <div id="searchResult"></div>
+
+        </section>
+
+
+        <!-- API ROUTES -->
+
+        <section class="card">
+
+            <h2>System Information</h2>
+
+            <button onclick="getSystemInfo()">
+                Get System Information
+            </button>
+
+            <pre id="systemResult"></pre>
+
+        </section>
+
+
+        <section class="card">
+
+            <h2>DNS Information</h2>
+
+            <button onclick="getDNSInfo()">
+                DNS Lookup
+            </button>
+
+            <pre id="dnsResult"></pre>
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Student Course Management System
+        </p>
+
+        <p>
+            Built using Node.js + Express.js
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
