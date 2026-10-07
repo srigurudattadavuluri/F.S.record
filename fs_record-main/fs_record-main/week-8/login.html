@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">🎓 StudentMS</div>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/register">Register</a>
+                <a href="/login">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="form-page">
+        <div class="form-container login-container">
+            <div class="login-icon">🔐</div>
+            <h1>Student Login</h1>
+            <p class="form-subtitle">Login using your username or email.</p>
+
+            <div id="loginMessage" class="message"></div>
+
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginUsername">Username / Email</label>
+                    <input type="text" id="loginUsername" name="username" placeholder="Enter username or email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" name="password" placeholder="Enter password" required>
+                </div>
+
+                <button type="submit" class="btn primary full-button">Login</button>
+            </form>
+
+            <p class="bottom-text">
+                New student? <a href="/register">Create an account</a>
+            </p>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

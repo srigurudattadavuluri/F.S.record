@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">🎓 StudentMS</div>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <button id="logoutBtn" class="logout-btn">Logout</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="dashboard-page">
+        <div class="dashboard-header">
+            <div>
+                <p class="tagline">STUDENT DASHBOARD</p>
+                <h1>Welcome, <span id="studentName">Student</span>!</h1>
+                <p>Here are your registered student details.</p>
+            </div>
+            <div class="dashboard-icon">🎓</div>
+        </div>
+
+        <div id="dashboardMessage" class="message"></div>
+
+        <section class="profile-card">
+            <h2>Student Profile</h2>
+            <div class="profile-grid">
+                <div><strong>Full Name</strong><span id="profileName">-</span></div>
+                <div><strong>Age</strong><span id="profileAge">-</span></div>
+                <div><strong>Date of Birth</strong><span id="profileDob">-</span></div>
+                <div><strong>Gender</strong><span id="profileGender">-</span></div>
+                <div><strong>Email</strong><span id="profileEmail">-</span></div>
+                <div><strong>Mobile</strong><span id="profileMobile">-</span></div>
+                <div><strong>Username</strong><span id="profileUsername">-</span></div>
+                <div><strong>Course</strong><span id="profileCourse">-</span></div>
+                <div class="full-width"><strong>Address</strong><span id="profileAddress">-</span></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Student Management System</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
